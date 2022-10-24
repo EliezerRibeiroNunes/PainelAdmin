@@ -2,6 +2,7 @@ import 'package:painel_richpay/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:painel_richpay/colors.dart';
 import 'package:painel_richpay/components/dashboard/header.dart';
+import 'info_cards.dart';
 import 'users_list.dart';
 
 //import 'components/storage_details.dart';
@@ -24,7 +25,7 @@ class DashboardScreen extends StatelessWidget {
                   flex: 5,
                   child: Column(
                     children: [
-                      //Cards(),
+                      const Cards(),
                       SizedBox(height: defaultPadding),
                       UsersList(),
                       if (Responsive.isMobile(context))
